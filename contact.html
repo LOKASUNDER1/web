@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOKASUNDER - ติดต่อเรา</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+            background-color: #f4f4f4; /* Background color */
+        }
+
+        header {
+            background-image: url('/image/แบนเนอร์.jpg'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .logo img {
+            max-width: 150px;
+            border-radius: 8px;
+            border: 2px solid white;
+            padding: 5px;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 15px 0;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            border-radius: 8px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .nav a:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .nav a i {
+            margin-right: 8px;
+        }
+
+        main {
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+
+        .discord-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #5865F2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .discord-button i {
+            margin-right: 8px;
+            font-size: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        .discord-button:hover {
+            background-color: #4752c4;
+            transform: scale(1.05);
+        }
+
+        .discord-button:hover i {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="/image/โลโก้.jpg" alt="LOKASUNDER Logo"></a> 
+        </div>
+        <nav class="nav">
+            <a href="about.html"><i class="fa-solid fa-info-circle"></i>เกี่ยวกับเรา</a>
+            <a href="services.html"><i class="fa-solid fa-cogs"></i>บริการ</a>
+            <a href="downloads.html"><i class="fa-solid fa-download"></i>ดาวน์โหลด</a>
+            <a href="contact.html"><i class="fa-solid fa-envelope"></i>ติดต่อ</a>
+        </nav>
+    </header>
+    <main>
+        <h1>ติดต่อเรา</h1>
+        <p class="contact-info">
+            หากคุณมีคำถามหรือต้องการข้อมูลเพิ่มเติม สามารถติดต่อเราได้ที่ Discord:
+        </p>
+        <a href="https://discord.gg/zZb7gy97PU" class="discord-button" target="_blank">
+            <i class="fab fa-discord"></i> เข้าร่วมเซิร์ฟเวอร์ Discord
+        </a>
+    </main>
+</body>
+</html>

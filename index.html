@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOKASUNDER - ดาวน์โหลดไฟล์ต่างๆ</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+            background-color: #333; /* สีพื้นหลังของเว็บไซต์ */
+        }
+
+        header {
+            background-image: url('/image/แบนเนอร์.jpg'); /* ใช้ภาพแบนเนอร์เป็นพื้นหลัง */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            background-color: rgba(0, 0, 0, 0.5); /* เพิ่มพื้นหลังสีดำโปร่งแสง */
+        }
+
+        .logo img {
+            max-width: 150px;
+            border-radius: 8px;
+            border: 2px solid white;
+            padding: 5px;
+            background-color: rgba(0, 0, 0, 0.3); /* เพิ่มพื้นหลังสีดำใสให้กับโลโก้ */
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 15px 0;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.7); /* เพิ่มพื้นหลังโปร่งแสงให้กับเมนูนำทาง */
+            padding: 10px 0;
+            border-radius: 8px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .nav a:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .nav a i {
+            margin-right: 8px;
+        }
+
+        main {
+            padding: 20px;
+            background-color: #ffffff; /* เปลี่ยนสีพื้นหลังของ main content */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .youtube-button {
+            display: inline-block;
+            background-color: #FF0000;
+            color: white;
+            padding: 12px 24px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .youtube-button:hover {
+            background-color: #cc0000;
+            transform: scale(1.05);
+        }
+
+        .social-links a {
+            color: #333;
+            font-size: 24px;
+            margin: 0 10px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #007BFF;
+            transform: scale(1.1);
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .nav a {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .logo img {
+                max-width: 120px;
+            }
+
+            main {
+                padding: 15px;
+                margin: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/image/โลโก้.jpg" alt="LOKASUNDER Logo">
+        </div>
+        <nav class="nav">
+                <a href="about.html"><i class="fa-solid fa-info-circle"></i>เกี่ยวกับเรา</a>
+                <a href="services.html"><i class="fa-solid fa-cogs"></i>บริการ</a>
+                <a href="downloads.html"><i class="fa-solid fa-download"></i>ดาวน์โหลด</a>
+                <a href="contact.html"><i class="fa-solid fa-envelope"></i>ติดต่อ</a>
+        </nav>
+    </header>
+    <main>
+        <h1>ยินดีต้อนรับสู่ LOKASUNDER</h1>
+        <p>ขอบคุณที่เข้ามาเยี่ยมชมครับ</p>
+        <a href="https://www.youtube.com/@lokasunder7327" class="youtube-button" target="_blank">
+            <i class="fa-brands fa-youtube"></i> ติดตามช่องยูทูป
+        </a>
+        <p id="visitCount">จำนวนผู้เข้าชม: 0</p>
+        <div class="social-links">
+            <a href="https://discord.gg/zZb7gy97PU" target="_blank" title="เข้าร่วม Discord ของเรา"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://www.tiktok.com/@yourprofile" target="_blank" title="ติดตามเราบน TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@help_ii" data-unique-id="help_ii" data-embed-type="creator" style="max-width: 780px; min-width: 288px;" > <section> <a target="_blank" href="https://www.tiktok.com/@help_ii?refer=creator_embed">@help_ii</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+
+    </main>
+    <script>
+        // Initial visit count
+        let visitCount = localStorage.getItem('visitCount');
+        if (!visitCount) {
+            visitCount = 0;
+        }
+        visitCount++;
+        localStorage.setItem('visitCount', visitCount);
+
+        document.getElementById('visitCount').textContent = `จำนวนผู้เข้าชม: ${visitCount}`;
+    </script>
+    
+</body>
+</html>
